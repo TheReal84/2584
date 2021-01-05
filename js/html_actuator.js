@@ -3,7 +3,6 @@ function HTMLActuator() {
   this.scoreContainer   = document.querySelector(".score-container");
   this.bestContainer    = document.querySelector(".best-container");
   this.messageContainer = document.querySelector(".game-message");
-  this.sharingContainer = document.querySelector(".score-sharing");
 
   this.score = 0;
 }
@@ -62,7 +61,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   // We can't use classlist because it somehow glitches when replacing classes
   var classes = ["tile", "tile-" + tile.value, positionClass];
 
-  if (tile.value > 2048) classes.push("tile-super");
+  if (tile.value > 2584) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
 
@@ -139,30 +138,10 @@ HTMLActuator.prototype.message = function (won) {
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
-
-  this.clearContainer(this.sharingContainer);
-  this.sharingContainer.appendChild(this.scoreTweetButton());
-  twttr.widgets.load();
 };
 
 HTMLActuator.prototype.clearMessage = function () {
   // IE only takes one value to remove at a time.
   this.messageContainer.classList.remove("game-won");
   this.messageContainer.classList.remove("game-over");
-};
-
-HTMLActuator.prototype.scoreTweetButton = function () {
-  var tweet = document.createElement("a");
-  tweet.classList.add("twitter-share-button");
-  tweet.setAttribute("href", "https://twitter.com/share");
-  tweet.setAttribute("data-via", "marumichannel");
-  tweet.setAttribute("data-url", StyleModule.getString("http://marumichannel.github.io/2048/"));
-  tweet.setAttribute("data-counturl", StyleModule.getString("http://marumichannel.github.io/2048/"));
-  tweet.textContent = "Tweet";
-
-  var text = "I scored " + this.score + " points at " + StyleModule.getString("2048") + ", a game where " +
-             StyleModule.getString("you join tiles to score high!") + " #井口2048";
-  tweet.setAttribute("data-text", text);
-
-  return tweet;
 };
