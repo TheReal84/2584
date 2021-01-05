@@ -6,38 +6,56 @@ div.tile-container .tile .tile-inner {
     box-shadow: none;
     z-index: 10;
 }
-.tile.tile-2 .tile-inner {
+.tile.tile-1 .tile-inner {
     background-image: url('../i/yukachi/2.gif')
 }
-.tile.tile-4 .tile-inner {
+.tile.tile-2 .tile-inner {
     background-image: url('../i/yukachi/4.gif')
 }
-.tile.tile-8 .tile-inner {
+.tile.tile-3 .tile-inner {
     background-image: url('../i/yukachi/8.gif')
 }
-.tile.tile-16 .tile-inner {
+.tile.tile-5 .tile-inner {
     background-image: url('../i/yukachi/16.gif')
 }
-.tile.tile-32 .tile-inner {
+.tile.tile-8 .tile-inner {
     background-image: url('../i/yukachi/32.gif')
 }
-.tile.tile-64 .tile-inner {
+.tile.tile-13 .tile-inner {
     background-image: url('../i/yukachi/64.gif')
 }
-.tile.tile-128 .tile-inner {
+.tile.tile-21 .tile-inner {
     background-image: url('../i/yukachi/128.gif')
 }
-.tile.tile-256 .tile-inner {
+.tile.tile-34 .tile-inner {
     background-image: url('../i/yukachi/256.gif')
 }
-.tile.tile-512 .tile-inner {
+.tile.tile-55 .tile-inner {
     background-image: url('../i/yukachi/512.gif')
 }
-.tile.tile-1024 .tile-inner {
+.tile.tile-89 .tile-inner {
     background-image: url('../i/yukachi/1024.gif')
 }
-.tile.tile-2048 .tile-inner {
+.tile.tile-144 .tile-inner {
     background-image: url('../i/yukachi/2048.gif')
+}
+.tile.tile-233 .tile-inner {
+    background-image: url('../i/yukachi/233.gif')
+}
+.tile.tile-377 .tile-inner {
+    background-image: url('../i/yukachi/377.gif')
+}
+.tile.tile-610 .tile-inner {
+    background-image: url('../i/yukachi/610.gif')
+}
+.tile.tile-987 .tile-inner {
+    background-image: url('../i/yukachi/987.gif')
+}
+.tile.tile-1597 .tile-inner {
+    background-image: url('../i/yukachi/1597.gif')
+}
+.tile.tile-2584 .tile-inner {
+    background-image: url('../i/yukachi/2584.gif')
 }
 .tile.tile-super .tile-inner {
     color: rgb(255, 230, 230);
@@ -49,5 +67,5 @@ div.tile-container .tile .tile-inner {
 }
 #preload images body:after {
     display: none;
-    url('../i/yukachi/2.gif') url('../i/yukachi/4.gif') url('../i/yukachi/8.gif') url('../i/yukachi/16.gif') url('../i/yukachi/32.gif') url('../i/yukachi/64.gif') url('../i/yukachi/128.gif') url('../i/yukachi/256.gif') url('../i/yukachi/512.gif') url('../i/yukachi/1024.gif') url('../i/yukachi/2048.gif') url('../i/yukachi/super.gif')
+    url('../i/yukachi/2.gif') url('../i/yukachi/4.gif') url('../i/yukachi/8.gif') url('../i/yukachi/16.gif') url('../i/yukachi/32.gif') url('../i/yukachi/64.gif') url('../i/yukachi/128.gif') url('../i/yukachi/256.gif') url('../i/yukachi/512.gif') url('../i/yukachi/1024.gif') url('../i/yukachi/2048.gif') url('../i/yukachi/233.gif') url('../i/yukachi/377.gif') url('../i/yukachi/610.gif') url('../i/yukachi/987.gif') url('../i/yukachi/1597.gif') url('../i/yukachi/2584.gif') url('../i/yukachi/super.gif')
 }
