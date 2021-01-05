@@ -8,7 +8,7 @@ StyleModule = (function(dictionary){
         "strings": [
         {
             "id": "default",
-            "2584": "2584",
+            "2048": "2584",
             "Title": "",
             "Subtitle": "",
             "Join the numbers and get to the 2048 tile!": "Join the numbers and get the 2048 tile!",
