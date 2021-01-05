@@ -8,7 +8,7 @@ StyleModule = (function(dictionary){
         "strings": [
         {
             "id": "default",
-            "2048": "2048",
+            "2584": "2584",
             "Title": "",
             "Subtitle": "",
             "Join the numbers and get to the 2048 tile!": "Join the numbers and get the 2048 tile!",
@@ -64,26 +64,8 @@ StyleModule = (function(dictionary){
         document.querySelector(".title").textContent = getString("2048");
         document.querySelector(".game-intro").textContent = getString("Join the numbers and get to the 2048 tile!");
         document.querySelector(".game-explanation").innerHTML = '<strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. ' + getString("When two tiles with the same number touch") + ', they <strong>merge into one!</strong>';
-        tweet = tweetButton()
-        document.querySelector(".sharing").replaceChild(tweet, document.querySelector(".sharing").firstElementChild)
         createButtons();
         document.querySelector("#theme").href = 'style/' + getString("id") + '.css';
-    }
-
-    function tweetButton() {
-        var tweet = document.createElement("a");
-        tweet.classList.add("twitter-share-button");
-        tweet.setAttribute("href", "https://twitter.com/share");
-        tweet.setAttribute("data-via", "marumichannel");
-        tweet.setAttribute("data-url", getString("http://marumichannel.github.io/2048/"));
-        tweet.setAttribute("data-counturl", getString("http://marumichannel.github.io/2048/"));
-        tweet.textContent = "Tweet";
-
-        var text = "Check out " + getString("2048") + ", a game where " +
-            getString("you join tiles to score high!") + " #井口2048";
-        tweet.setAttribute("data-text", text);
-
-        return tweet;
     }
 
     function buildButton(buttonStrings) {
@@ -117,4 +99,3 @@ StyleModule = (function(dictionary){
 })(dict);
 
 StyleModule.init()
-
