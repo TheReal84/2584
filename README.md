@@ -1,9 +1,9 @@
 # 井口 2584
-井口 2584 (Iguchi 2584) is a clone of [Jeremy Hummel's 1597](https://hummel.dev/1597/), using animated gifs of Iguchi Yuka and other voice actresses for tiles. 
+井口 2584 (Iguchi 2584) is a clone of [TheReal23's 2584](https://thereal23.github.io/2584/), using animated gifs of Iguchi Yuka and other voice actresses for tiles. 
 
 ### Contributions
 
- - [Jeremy Hummel](https://github.com/jmhummel) added fibonacci sequence.
+ - [TheReal23](https://thereal23.github.io/2584/) added fibonacci sequence and marumichannel added images.
 
 ### Screenshot
 
